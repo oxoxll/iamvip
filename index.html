@@ -8,6 +8,7 @@
 <title>test</title>
 
 <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheets/stylesheet.css">
 </head>
 <body>
 <div class="navbar navbar-default">
@@ -17,16 +18,16 @@
         </div>
     </div>
 </div>
-<div class="container" ng-controller="AccountListCtrl">
+<div class="container account-info" ng-controller="AccountListCtrl">
     <div class="row" ng-repeat="account in accounts">
         <div class="col-xs-2">账号:</div>
         <div class="col-xs-2">{{account.name}}</div>
-        <div class="col-xs-2">复制账号</div>
+        <div class="col-xs-2"><button class="btn btn-info btn-xs" ng-click="copy($event.target)">复制账号</button></div>
         <div class="col-xs-2">密码:</div>
         <div class="col-xs-2">{{account.pwd}}</div>
-        <div class="col-xs-2">复制密码</div>
+        <div class="col-xs-2"><button class="btn btn-info btn-xs" ng-click="copy($event.target)">复制密码</button></div>
     </div>
-    <div class="row"><button class="btn col-xs-offset-6" ng-click="change()">换一波</button></div>
+    <div class="row"><button class="btn col-xs-offset-10 btn-primary btn-lg" ng-click="change()">换一波</button></div>
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
