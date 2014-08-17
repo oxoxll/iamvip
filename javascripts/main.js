@@ -26,6 +26,7 @@ function AccountListCtrl($scope) {
         }
         return ret;
     }
+
 }
 
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
