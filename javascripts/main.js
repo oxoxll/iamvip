@@ -29,4 +29,4 @@ function AccountListCtrl($scope) {
 }
 
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F122089ee815b1487155af666e28918ae' type='text/javascript'%3E%3C/script%3E"));
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fac2122fa75b4c3a12135db6aefe4335e' type='text/javascript'%3E%3C/script%3E"));
